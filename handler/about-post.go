@@ -36,7 +36,7 @@ func GetAboutPost(w http.ResponseWriter, r *http.Request) {
 	pw := strings.Split(user[1], "@")
 	port := strings.Split(user[2], "/")
 	msgArgs := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=%s connect_timeout=%s", pw[1], port[0], user[0], pw[0], port[1], "disable", "5")
-	db, err := gorm.Open(config.DB.Dialect, msgArgs)
+	db, err := gorm.Open("postgres", msgArgs)
 
 	defer db.Close()
 	returnRes := models.ReturnRes{}
