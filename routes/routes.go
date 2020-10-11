@@ -3,7 +3,6 @@ package routes
 import (
 	"Golang10/Final/Ardi/handler"
 	"fmt"
-	"log"
 	"net/http"
 
 	"github.com/gorilla/mux"
@@ -46,6 +45,6 @@ func Routes() {
 	themeRoute := http.FileServer(http.Dir("./theme/"))
 	http.Handle("/theme/", http.StripPrefix("/theme/", themeRoute))
 
-	fmt.Println("Server running on :8080")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	fmt.Println("Server running on :80")
+	http.ListenAndServe(":80", nil)
 }
