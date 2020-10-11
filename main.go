@@ -7,8 +7,6 @@ import (
 	"os"
 
 	"github.com/golang-migrate/migrate/v4"
-	_ "github.com/golang-migrate/migrate/v4/database/postgres"
-	_ "github.com/golang-migrate/migrate/v4/source/file"
 )
 
 func main() {
@@ -18,7 +16,7 @@ func main() {
 
 	// migrate db
 	m, err := migrate.New(
-		"golang.sql",
+		"",
 		os.Getenv("DATABASE_URL"))
 	if err != nil {
 		log.Fatal(err)
