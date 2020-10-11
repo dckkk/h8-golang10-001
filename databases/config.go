@@ -7,6 +7,7 @@ import (
 	"strings"
 
 	"github.com/jinzhu/gorm"
+	_ "github.com/lib/pq"
 )
 
 type Config struct {
