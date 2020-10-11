@@ -36,7 +36,7 @@ func GetConfig() *Config {
 
 func SetupDatabase(config *Config) {
 	configDb := os.Getenv("DATABASE_URL")
-	configDb = strings.Replace(configDb, "postgres://", "")
+	configDb = strings.ReplaceAll(configDb, "postgres://", "")
 	user := strings.Split(configDb, ":")
 	pw := strings.Split(user[1], "@")
 	port := strings.Split(user[2], "/")
