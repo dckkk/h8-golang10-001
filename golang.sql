@@ -20,8 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `golang`
 --
-CREATE DATABASE IF NOT EXISTS `golang` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `golang`;
+CREATE DATABASE IF NOT EXISTS `debutr1nmrsvq3` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `debutr1nmrsvq3`;
 
 -- --------------------------------------------------------
 
