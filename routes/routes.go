@@ -48,5 +48,5 @@ func Routes() {
 	http.Handle("/theme/", http.StripPrefix("/theme/", themeRoute))
 
 	fmt.Println("Started")
-	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), router))
+	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), nil))
 }
