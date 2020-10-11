@@ -1,0 +1,19 @@
+Nama : Ardi Gunawan
+No. Absen : GLNG010GWI001
+Tugas : Golang 10 Haktiv8 Sesi 12
+Instruktur: Dicky pratama
+
+Catatan:
+1. Silahkan extract file golang bernama ardigunawan.zip
+2. isi database connection string di file src/databases/config.go pada line 26, 27, 28
+3. ada 2 opsi terkait database :
+   A. import database dari file golang.sql untuk mendapat sampling data di database (login bisa pakai email :ardi@example.com password : 123456)
+   B. Jika ingin tanpa data sampling: Buat database "golang" dan go run main.go didalam folder src dan akan create table yg dibutuhkan system
+4. go run main.go didalam folder src
+5. silahkan register untuk membuat akun baru 
+6. login menggunakan akun saat register
+7. Silahkan bereksplorasi
+
+Terima kasih
+
+
